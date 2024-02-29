@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+		  <div class="slides">
+
+
+
+
+<!-- =========================================================================================================================  -->
+			  <section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+			    <h1> Reading Group </h1>
+<a href="https://press.princeton.edu/books/paperback/9780691224145/modeling-social-behavior">"Smaldino "Modeling Social Behavior" - Chapter 6: Cooperation </a>
+			   <br>
+Peter Romero, 18.01.2024
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+			    <h2> Topics </h2>
+                <ul>
+                    <li>Game Theory</li>
+                    <li>Evolutionary Dynamics</li>
+                </ul>
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  </section>
+<!-- =========================================================================================================================  -->
+
+
+
+<!-- =========================================================================================================================  -->
+			  <section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+			    <h2> Some Basics </h2>
+                <ul>
+                    <li>Game Theory (GT)</li>
+                    <li>Prisoners' Dilemma (of GT)</li>
+                    <li>Evolutionary Dynamics (ED)</li>
+                    <li>Replicator Dynamics (of ED)</li>
+                </ul>
+
+              </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+			    <h2> Game Theory </h2>
+                <p>Three mechanisms of Behavioural Economics:</p>
+<ul>
+    <li>Market Mechanism</li>
+    <li>Power Mechanism</li>
+    <li><p class="fragment highlight-red">Community Mechansim</p></li>
+</ul>
+<p>(e.g., Ogaki, 2022)</p>
+              </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+			    <h2> Prisoners' Dilemma </h2>
+
+<table>
+  <tr>
+    <th></th>
+    <th>Cooperate</th>
+    <th>Defect</th>
+  </tr>
+  <tr>
+    <td>Cooperate</td>
+    <td>b - c</td>
+    <td>-c</td>
+  </tr>
+  <tr>
+    <td>Defect</td>
+    <td>b</td>
+    <td><p class="fragment highlight-red">0</p></td>
+  </tr>
+</table>
+
+<p class="fragment">Nash Equilibrium</p>
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+			    <h2> Evolutionary Dynamics </h2>
+<img src="darwin_christ_college.jpg" alt="Darwin Christ College Cambridge" width="400" > 
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+			    <h2> Core Theory of Evolution </h2>
+                <ul>
+                    <li>Variation</li>
+                    <li>Heritability</li>
+                    <li>Selection</li>
+                </ul>
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+			    <h2> Transmission Strategies</h2>
+                <ul>
+                    <li>Vertical transmission</li>
+                    <li>Success-biased transmission</li>
+                </ul>
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+			    <h2> Replicator Dynamics 1/2 </h2>
+               \[ \begin{aligned}
+               number\_of\_type\_A\_ind = pNV(A) \\
+               p = \frac{number\_of\_new\_A\_ind.}{number\_ of\_new\_A + number\_of\_new\_B} \\
+               p' =\frac{pNV(A)z)}{pNV(A)z+(1-p)NV(B)z} 
+                \end{aligned}\]
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+			    <h2> Replicator Dynamics 2/2 </h2>
+               \[ \begin{aligned}
+               p'=p\frac{V(A)}{pV(A)+(1-p)V(B)}\\
+               p'_i=p_i\frac{V(i)}{\bar{w}}\\
+               \Delta p_i=p'_i-p_i=pi(\frac{V(i)}{\bar{w}-1})
+                \end{aligned}\]
+<p class="fragment highlight-red">Note: a lot of assumptions, e.g., well-mixed population</p>
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  </section>
+<!-- =========================================================================================================================  -->
+
+
+
+
+
+
+<!-- =========================================================================================================================  -->
+			  <section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Cooperation and Assortment</h2>
+                  Assumptions to far from reality.
+                  Hence, we'll start by a base case, then extend the setting one step at a time.
+                  <br>
+                  Let's denote:
+                  <br>
+                  <b>ALLC</b> = All cooperate
+                  <br>
+                  <b>ALLD</b> = All defect
+                  <br>
+                  These strategies will result in different <b>expected payoffs</b> in <b>evolutionary game theory</b>.
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Cooperation with random connections</h2>
+                  <b>V(A)</b>= expected payoff of strategy A
+               \[ \begin{aligned}
+V(ALLC)=p(b-c)+(1-p)(-c)=pb-c\\
+V(ALLD)= pb+(1-p)
+                \end{aligned}\]
+As long as there is random interaction, ALLD will always outperform ALLC.
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Cooperation with random connections</h2>
+<img src="assortment_random.png" alt="Random Assortment" width="600" > 
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Cooperation in a structured environment</h2>
+<img src="v_neumann_neighbourhood.png" alt="v. Neumann neighbourhood with Manhattan distance r =1" width="444" > 
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Cooperation in a structured environment</h2>
+                  <h5>Simplified Base Model</h5>
+               \[ \begin{aligned}
+               V(C) = n_C(b − c) − n_Dc \\
+                V(D) = n_Cb
+                \end{aligned}\]
+Each agent $i$ will keep track of its strategy, $s_i$, and its payoff, $V_i$. $b$ and $c$ are payoffs. Each agent counts $n$ numbers of $C$ or $D$ in their neighbourhoods.
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Cooperation in a structured environment</h2>
+<img src="base_model_results.png" alt="Results of base model at different stages of simulation." width="444" > 
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Cooperation in a structured environment</h2>
+<img src="base_model_equilibrium.png" alt="Equilibrium collaboration frequency" width="444" > 
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Cooperation in a structured environment</h2>
+<img src="base_model_assortment.png" alt="Advantage of cooperation in square lattice" width="444" > 
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Cooperation with reduced assortment</h2>
+<img src="base_model_reduced_assortment.png" alt="Cooperation in square lattice with reduced assortment" width="444" > 
+<img src="base_model_reduced_assortment_results.png" alt="Results of cooperation in square lattice with reduced assortment" width="444" > 
+
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Positive Assortment and Hamilton's Rule</h2>
+Individuals can now transmit their strategy through genetics or social learning.
+<br>
+p = probability that C encounters C
+<br>
+1-p = probability that D encounters D
+<br>
+r > 0 is probability above chance that C meets C or D meets D.
+<br>
+               \[ \begin{aligned}
+               Pr(ALLC|ALLC) = r + (1 − r)p\\
+Pr(ALLD|ALLD) = r + (1 − r)(1 − p)
+                \end{aligned}\]
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Positive Assortment and Hamilton's Rule</h2>
+               \[ \begin{aligned}
+V(ALLC)=r(1-p)b+pb-c\\
+V(ALLD)=rb-c>0\\
+rb − rpb + pb − c > pb − rpb\\
+rb > c
+                \end{aligned}\]
+Hamilton's Rule: C will prefer C when benefits are preferential to C
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Ramifications of Hamilton's rule</h2>
+                  Kin selection/ Inclusive fitness (rather give life for relatives; the closer the more likely)
+                  <br>
+                 Mechanisms for assortments need not be kin-based, but any cooperative facilitation will work. 
+                  <br>
+               Cooperation might not be constant over time, but can decrease, just to increase again. 
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  </section>
+<!-- =========================================================================================================================  -->
+
+
+
+
+
+
+<!-- =========================================================================================================================  -->
+			  <section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Reciprocity</h2>
+                  What happens when there are more rounds per game?
+                  What happens when the outcome is not determined by the opening move?
+                  What happens when agents know how many (or not)?
+                  In short: how do <b>contingent strategies</b> look like?
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Iterated Prisoner's Dilemma Game (IPD)</h2>
+<table>
+  <tr>
+    <th></th>
+    <th>ALLC</th>
+    <th>TFT</th>
+    <th>ALLD</th>
+  </tr>
+  <tr>
+    <td>ALLC</td>
+    <td>k(b - c)</td>
+    <td>k(b - c)</td>
+    <td>-kc</td>
+  </tr>
+  <tr>
+    <td>TFT</td>
+    <td>k(b - c)</td>
+    <td>k(b - c)</td>
+    <td>-c</td>
+  </tr>
+  <tr>
+    <td>ALLD</td>
+    <td>kb</td>
+    <td>k(b - c)/b</td>
+    <td>0</td>
+  </tr>
+</table>
+...introducing: tit-for-tat(TFT)!
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Tit-For-Tat</h2>
+               \[ \begin{aligned}
+V(ALLC) = kn_C(b − c) − kn_Dc\\
+V(TFT) = kn_C(b − c) − n_Dc.
+                \end{aligned}\]
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>TIT outperforms ALLD</h2>
+<img src="tft_dominates.png" alt="TFT dominates ALLD up to certain level of randomness" width="444" >
+<img src="tft_frequency_by_game.png" alt="TFT frequency by game" width="444" >
+It is nice (assumes best of co-players), retaliatory (D returns D), and forgiving (C results ins C again!)... (remark RP: like hidden Markov model; maybe not the best evolutionary strategy.)
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Evolutionary Strategy of Reciprocity</h2>
+                  Simulation shows: the longer relationship persists, the more effective strategy of reciprocity to promote cooperation.
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Problem of Fixed Numbers</h2>
+Most games allow for exploitation if the number of rounds is known.
+Also, they assume perfect rationality (which could explain how "good" economics explains the markets...)
+Humans though are <b>bounded</b> in their rationality and <b>constrained</b> by context. 
+Folk theorem: that changes as soon as number of rounds are unknown.
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Probabilistic IPD</h2>
+                  Let $w$ be probability of another round and K the sum of all interactions, then:
+               \[ \begin{aligned}
+               K = 1+w+w^2+w^3+ \dots 
+               K = \frac{1}{1-w}
+                \end{aligned}\]
+s.t. 
+<br>
+if $w = 0$, expected number is 1 and $K$ increases with $w$ <i>ad infinitum</i>.
+
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Evolutionary Stable Strategy (ESS)</h2>
+                  Can ALLD invade TFT and vice versa?
+               \[ \begin{aligned}
+V(ALLD|ALLD)=0 \\
+V(ALLC|ALLD) = −c − wc − w^2c − \dots =  \frac{−c}{1 − w}\\
+V(ALLD|ALLC) = b + bw + bw^2 + \dots =  \frac {b}{1 − w}\\
+V(TFT|TFT) = b − c + (b − c)w + (b − c)w^2 + \dots = \frac{b − c}{1 − w}
+                \end{aligned}\]
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2></h2>
+                  <h2>Evoluionary Stable Strategy (ESS)</h2>
+               \[ \begin{aligned}
+V(ALLD|TFT) = b + (0)w + (0)w^2 + \dots = b\\
+\frac{b-c}{1-} > b\\
+wb > C
+                \end{aligned}\]
+                ...which reminds as to Hamilton's rule!
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>TFT can Invade ALLD with positive assortment</h2>
+	               \[ \begin{aligned}
+Pr(TFT|TFT) = r + (1 − r)p\\
+r >  \frac{1 − w}{b/c − w}
+                \end{aligned}\]
+		  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Three Company</h2>
+<img src="mutation.png" alt="Introduction of Mutation parameter" width="666" >
+<br>
+A mutation parameter$\mu$ may help against neutral drift (TFT and C), leaving the system vulnerable against D.
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Plus Ultra</h2>
+                  However, other games are more difficult.
+                  <br>
+                  Snowdrift game
+                  <br>
+                  Stag Hunt Game
+                  <br>
+                  Public goods game
+                  <br>
+                  Pavlov Strategy
+                  <br>
+                  Also, strategies can be exploited to extinction just to leave place for a newer, fitter generation (Smaldino, 2013)
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  </section>
+<!-- =========================================================================================================================  -->
+
+
+
+
+
+
+<!-- =========================================================================================================================  -->
+			  <section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+                  <h2>Application to Hybrid Systems</h2>
+                  Find cooperative/ TFT patterns in HS
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  </section>
+<!-- =========================================================================================================================  -->
+
+
+
+
+
+
+<!-- =========================================================================================================================  -->
+			  <section>
+<!-- --------------------------------------------------------------- -->
+			  <section>
+			  </section>
+<!-- --------------------------------------------------------------- -->
+			  </section>
+<!-- =========================================================================================================================  -->
+
+
+
+
+
+
+			  
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/math/math.js"></script>
+        <script>
+          Reveal.initialize({ plugins: [ RevealMath.KaTeX ] });
+        </script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
